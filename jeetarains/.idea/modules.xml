@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java_250220/Java_250220.iml" filepath="$PROJECT_DIR$/Java_250220/Java_250220.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewPro/NewPro.iml" filepath="$PROJECT_DIR$/NewPro/NewPro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellow/hellow.iml" filepath="$PROJECT_DIR$/hellow/hellow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jeetarains.iml" filepath="$PROJECT_DIR$/.idea/jeetarains.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetbrains0219/jetbrains0219.iml" filepath="$PROJECT_DIR$/jetbrains0219/jetbrains0219.iml" />
+    </modules>
+  </component>
+</project>

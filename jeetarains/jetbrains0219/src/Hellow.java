@@ -2,7 +2,7 @@ public class Hellow {
 //  psvm : 메인 클래스 생성 단축키
 //  컨트롤 + f10 : 실행 단축키
 //  컨트롤 + 쉬프트 + f 10 : 실행 할 클래스를 활성화 된 클래스로 바꾸는 단축키
-  //컨트롤 + 알트 + v :
+// 컨트롤 + 알트 + v :
 
 //  클래스와 인터페이스는 첫문자와 언더바 이후 두번째 단어 첫문자가 대문자
 //  카멜은 머리는 작게 몸통은 크게
@@ -13,6 +13,7 @@ public class Hellow {
 // Scanner in = new Scanner(System.in); :  스캐너 클래스를 임포트 해 사용할때.
 // int x = in.nextInt(); : 스캐너로 숫자를 받을때.
 // String input = in.nextLine(); : 스캐너로 문자를 받을때. 이처럼 스캐너 변수명.받을 타입() 해주면 스캐너로 특정 형태의 값을 받을 수 있다.
+//  String a = (x = 0) ? "짝":"홀"; : 자바에서의 삼항연산
   public static void main(String[] args) {
     String x = "a";
 
