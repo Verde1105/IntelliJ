@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 //이하 계산기
-public class Arithmometer {
+public class Arithmetic {
   public static void main(String[] args) {
 
     System.out.println("계산기를 실행합니다.");
@@ -19,10 +19,6 @@ public class Arithmometer {
     if (!sign.equals("-") && !sign.equals("=") && !sign.equals("+") && !sign.equals("*") && !sign.equals("/")) {
       System.out.println("잘못된 입력값입니다.");
       System.out.println("다시 입력해 주세요.");
-      return validation();
-    } else if (!(sign instanceof String)) {
-      System.out.println("잘못된 입력값입니다.");
-      System.out.println("숫자를 입력할 수 없습니다. 다시 입력해주세요.");
       return validation();
     }
     return sign;
@@ -40,7 +36,6 @@ public class Arithmometer {
       scan.nextLine();
       return validationInt();
     }
-
     return i;
   }
 
@@ -49,7 +44,6 @@ public class Arithmometer {
 
     while (true) {
       int qed2 = qed;//기본전달값 + @ 값
-
       String sign = validation();//부호입력
 
       if (sign.equals("=")) {
