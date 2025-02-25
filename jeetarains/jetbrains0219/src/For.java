@@ -19,7 +19,7 @@ public class For {
 
     }
     System.out.println(Arrays.toString(arr));
-
+   
   }
 
 
