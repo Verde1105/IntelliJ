@@ -43,7 +43,7 @@ class Bank {
     Scanner sc = new Scanner(System.in);
     String i = sc.nextLine();
     List<Object> listM = listM();
-
+ 
     for (int x = 0; x < listM.size(); x++) {
       if (i == null || i.equals("")) {
         System.out.println("공백은 안됩니다. 다시 입력해주십시오.");
