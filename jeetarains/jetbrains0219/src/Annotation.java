@@ -87,10 +87,24 @@ System.out.println(intContainer.get()); // 출력: 100
 
 람다식
 -엄밀히 말하자면 람다식은 익명 클래스의 익명 메소드이다.
+-메소드의 이름과 리턴 키워드 생략가능. 타입스크립트 선언과 비슷하다.
 
 익명클래스
+-즉석에서 클래스를 선언하고 사용하는 방식
+-한번만 사용할 객체나 인터페이스에서 보통 사용.
+선언법 :
+MyFunction sum = new MyFunction() {
+    @Override
+    public int add(int a, int b) {
+        return a + b;
+    }
+};
+System.out.println(sum.add(10, 20)); // 30
+
 함수형 인터페이스
+선언법 : @FunctionalInterface
 -단 하나의 추상 메소드만을 가지는 인터페이스를 함수형 인터페이스라 함.
+-람다식의 기반
 
 컬렉션 프레임 워크
 어레이 리스트
@@ -101,12 +115,34 @@ System.out.println(intContainer.get()); // 출력: 100
 
   */
   public static void main(String[] args) {
+    번호();
+//    int a = 5;
+//    int b = 0;
+//    for (; a + b <= 5; ) {//두 합이 5보다 크면 멈춤. 작으면 계속 돌아감.
+//      a = (int) (Math.random() * 6);
+//      b = (int) (Math.random() * 6);
+//      System.out.println(a + "," + b);
+//    }
+  }
+
+  public static void 번호() {
     int a = 5;
     int b = 0;
-    for (; a + b <= 5; ) {//두 합이 5보다 크면 멈춤. 작으면 계속 돌아감.
-      a = (int) (Math.random() * 6);
-      b = (int) (Math.random() * 6);
-      System.out.println(a + "," + b);
+    int c = 0;
+    for (; ; ) {//두 합이 5보다 크면 멈춤. 작으면 계속 돌아감.
+      a = (int) (Math.random() * 100);
+      b = (int) (Math.random() * 100);
+      c = (int) (Math.random() * 100000 - 10000);
+      if (a < 10 && b < 10) {
+        System.out.println("회원번호" + "00" + a + "-" + "00" + b + "-" + c);
+      } else if (a < 10 && b < 100) {
+        System.out.println("회원번호" + "00" + a + "-" + "0" + b + "-" + c);
+      } else if (a < 100 && b < 10) {
+        System.out.println("회원번호" + "0" + a + "-" + "00" + b + "-" + c);
+      } else {
+        System.out.println("회원번호" + "0" + a + "-" + "0" + b + "-" + c);
+      }
+//      System.out.println("회원번호" + String.format("%03d", a) + "-" + "0" + b + "-" + String.format("%07d", c));
     }
   }
 }
