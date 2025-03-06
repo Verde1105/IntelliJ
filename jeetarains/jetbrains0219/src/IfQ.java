@@ -13,4 +13,3 @@ public class IfQ {
     System.out.println(a);
   }
 }
-
