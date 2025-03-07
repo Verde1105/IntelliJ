@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/hellow/hellow.iml" filepath="$PROJECT_DIR$/hellow/hellow.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jeetarains.iml" filepath="$PROJECT_DIR$/.idea/jeetarains.iml" />
       <module fileurl="file://$PROJECT_DIR$/jetbrains0219/jetbrains0219.iml" filepath="$PROJECT_DIR$/jetbrains0219/jetbrains0219.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mini/mini.iml" filepath="$PROJECT_DIR$/mini/mini.iml" />
     </modules>
   </component>
 </project>

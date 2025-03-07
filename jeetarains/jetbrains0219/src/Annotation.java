@@ -82,6 +82,8 @@ System.out.println(intContainer.get()); // 출력: 100
 스테틱을 사용하는 방법과 이유
 
 정적과 동적이란?
+-정적이란 스테틱. 한번 값이 정해지면 몇번이고 불러낼때마다 같은 값인것.
+-동적이란 다이나믹 값이 몇번이고 바뀌고 불러낼때마다 값이 달라질수 있는것.
 
 인터페이스에서 사용가능한 4가지 메소드와 각 기능
 
@@ -112,6 +114,9 @@ System.out.println(sum.add(10, 20)); // 30
 서로 상속의 관계
 해쉬맵
 
+생성자 참조?
+
+
 
   */
   public static void main(String[] args) {
@@ -129,7 +134,7 @@ System.out.println(sum.add(10, 20)); // 30
     int a = 5;
     int b = 0;
     int c = 0;
-    for (; ; ) {//두 합이 5보다 크면 멈춤. 작으면 계속 돌아감.
+    for (; ; ) {//무한루프
       a = (int) (Math.random() * 100);
       b = (int) (Math.random() * 100);
       c = (int) (Math.random() * 100000 - 10000);
