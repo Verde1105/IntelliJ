@@ -1,39 +1,54 @@
-public class UserDTO  {
+public class UserDTO {
 
-    private String id = "";
-    private String pw = "";
-    private String name = "";
-    private String 회원번호 = "";
+  //판매자 회원  seller
+  //구매자 회원 buyer
+  //관리자 회원 manager
+  private String userType = "seller";
+  private String id = "";
+  private String pw = "";
+  private String name = "";
+  private String userNum = "";
 
-    public String get회원번호() {
-        return 회원번호;
-    }
+  public UserDTO() {
+  }
 
-    public void set회원번호(String 회원번호) {
-        this.회원번호 = 회원번호;
-    }
+  public String getUserNum() {
+    return userNum;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setUserNum(String userNum) {
+    this.userNum = userNum;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getPw() {
-        return pw;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setPw(String pw) {
-        this.pw = pw;
-    }
+  public String getPw() {
+    return pw;
+  }
 
-    public String getId() {
-        return id;
-    }
+  public void setPw(String pw) {
+    this.pw = pw;
+  }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public String getUserType() {
+    return userType;
+  }
+
+  public void setUserType(String userType) {
+    this.userType = userType;
+  }
 }
