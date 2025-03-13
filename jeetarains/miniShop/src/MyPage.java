@@ -41,7 +41,6 @@ public class MyPage {
               String userI = sc.nextLine();
               map.replace("name", map.get("name"));
               map.put("name", userI);
-//제약없이 변경가능
               break;
             case "4":
               System.out.println("메인으로 이동합니다.");

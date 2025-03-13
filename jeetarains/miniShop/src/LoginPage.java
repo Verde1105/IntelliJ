@@ -34,7 +34,7 @@ public class LoginPage {
     String userId = sc.nextLine();
     System.out.print("비밀번호 : ");
     String userPw = sc.nextLine();
-
+//입력값과 아이디와 비교할때, 비번과 비교할때 등 변수별로 메소드 작게 만들어놓기
     for (HashMap<String, String> map : list) {
       if (userId.equals(map.get("id"))) {
         if (map.get("pw").equals(userPw)) {
